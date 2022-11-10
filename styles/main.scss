@@ -1,0 +1,509 @@
+@import '../base/base';
+
+$title-font: 'Montserrat';
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+
+.header {
+    width: 100%;
+    height: 700px;
+    background-image: url("../images/Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 41px 309px 235px 248px;
+
+
+    nav {
+        width: 100%;
+
+
+        .nav {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .nav__logo {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 20px;
+            color: white;
+            padding-top: 7px;
+        }
+
+        button {
+            font-family: $title-font;
+            font-weight: 400;
+            font-size: 14px;
+            color: white;
+            background-color: transparent;
+            border-radius: 25px;
+            border: none;
+        }
+
+        .nav__button_left {
+            padding-right: 16px;
+        }
+
+        .nav__button_right {
+            width: 90px;
+            height: 35px;
+            border: 1px solid white;
+            line-height: 17px;
+        }
+
+    }
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+
+
+    .header__title {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 52px;
+        color: white;
+        width: 570px;
+        height: 126px;
+        text-align: center;
+        line-height: 63px;
+        padding: 13px 0px 0px 60px;
+    }
+
+    .header__subtitle {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 24px;
+        color: white;
+        width: 472px;
+        height: 100px;
+        text-align: center;
+        padding: 41px 0px 0px 61px;
+    }
+
+    .header__button {
+        height: 124px;
+        text-align: center;
+        padding-left: 62px;
+
+        .header__red {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 14px;
+            color: white;
+            background-color: #FF4E50;
+            border-radius: 25px;
+            width: 225px;
+            height: 40px;
+            border: none;
+        }
+    }
+}
+
+.how-it-works {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    padding-top: 92px;
+    padding-bottom: 38px;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 461px;
+    justify-content: center;
+
+    .step__photo1 {
+        width: 300px;
+        height: 400px;
+        background-image: url("../images/dream-1.png");
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0px 25px 21px 25px;
+
+        .step__button {
+            width: 70px;
+            height: 20px;
+            border-radius: 40px;
+            background-color: #FF4E50;
+            border: none;
+            letter-spacing: 2px;
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 10px;
+            color: white;
+        }
+
+        .step__sed {
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 24px;
+            color: white;
+            line-height: 26px;
+            padding-top: 20px;
+        }
+
+        .step__libero {
+            font-family: "Roboto";
+            font-weight: 300;
+            font-size: 14px;
+            color: white;
+            padding-top: 25px;
+        }
+
+        .step__libero_margin {
+            padding-top: 19px;
+        }
+    }
+
+    .step__photo1_nomargin {
+        margin: 0px;
+        margin: 0px;
+        background-image: url("../images/dream-3.png");
+        width: 300px;
+        height: 400px;
+    }
+
+    .step__photo1_photo2 {
+        background-image: url("../images/dream-2.png");
+        width: 300px;
+        height: 400px;
+    }
+}
+
+.how-it-works1 {
+    @extend .how-it-works;
+    padding-top: 31px;
+    padding-bottom: 25px;
+}
+
+.avatars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .avatar {
+        width: 237px;
+        padding: 14px;
+        height: 273px;
+
+        .avatar__image {
+            padding-bottom: 17px;
+            text-align: center;
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+
+            .avatar__image_change1 {
+                padding-left: 30px;
+            }
+
+            .avatar__image1,
+            .avatar__image2,
+            .avatar__image3,
+            .avatar__image4 {
+                border-radius: 50%;
+            }
+        }
+
+        .avatar__name {
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 14px;
+            color: black;
+            text-align: center;
+            padding-bottom: 25px;
+            padding-top: 17px;
+        }
+
+        .avatar__desc {
+            font-family: "Roboto";
+            font-weight: 300;
+            font-size: 14px;
+            color: black;
+            text-align: center;
+        }
+    }
+}
+
+.avatar__image_change1::after {
+    content: '';
+    display: block;
+    background-image: url("../images/music2.svg");
+    background-color: #FF4E50;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 98px;
+    bottom: 0px;
+    outline: 4px solid white;
+}
+
+.avatar__image_change2::after {
+    @extend .avatar__image_change1, ::after;
+    background-image: url("../images/brush.svg");
+    background-color: #19D4CA;
+}
+
+.avatar__image_change3::after {
+    @extend .avatar__image_change1, ::after;
+    background-image: url("../images/camera.svg");
+    background-color: #FFA710;
+}
+
+.avatar__image_change4::after {
+    @extend .avatar__image_change1, ::after;
+    background-image: url("../images/airplane.svg");
+    background-color: #667DF3;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button__element {
+        width: 180px;
+        height: 40px;
+        border-radius: 40px;
+        border: 2px solid #FF4E50;
+        text-align: center;
+        background-color: transparent;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 14px;
+        color: #FF4E50;
+    }
+}
+
+.ideas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    .ideas__sport {
+        background-image: url("../images/Sport.png");
+        width: 300px;
+        height: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 0 156px rgba(0, 0, 0, 0.2) inset;
+    }
+
+    .ideas__sport_text {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 22px;
+        color: white;
+        text-align: center;
+    }
+
+    .ideas__sport_wellness {
+        background-image: url("../images/wellness.png");
+        width: 300px;
+        height: 310px;
+        margin-left: 20px;
+    }
+
+    .ideas__sport_extreme {
+        background-image: url("../images/extreme.png");
+        width: 300px;
+        height: 310px;
+        margin-left: 20px;
+        padding: 36px
+    }
+
+    .ideas__sport_games {
+        background-image: url("../images/games.png");
+        width: 300px;
+        height: 310px;
+        margin: 20px 20px 20px 0;
+    }
+
+    .ideas__sport_culture {
+        background-image: url("../images/culture.png");
+        width: 620px;
+        height: 310px;
+    }
+
+    .ideas__sport_enjomet {
+        background-image: url("../images/enjomet.png");
+        width: 620px;
+        height: 310px;
+    }
+
+    .ideas__sport_travelling {
+        background-image: url("../images/travelling.png");
+        width: 300px;
+        height: 310px;
+        margin-left: 20px;
+    }
+
+}
+
+.greeting {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+form {
+    margin: 0 auto;
+
+    input {
+        width: 299px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    input:focus {
+        outline: none;
+        border: none;
+        border: solid 1px #FF4E50;
+    }
+}
+
+input::placeholder {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    color: #999999;
+    padding: 14px 0px 10px 14px;
+}
+
+.search {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    width: 172px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #FF4E50;
+    border: none;
+}
+
+hr {
+    border: none;
+    background-color: #FF4E50;
+    height: 3px;
+    opacity: 100%;
+    margin-top: 100px;
+    margin-bottom: 35px;
+}
+
+.footer {
+    padding: 0px 250px 0px 250px;
+}
+
+.one {
+    width: 25%;
+
+    .dreamshare {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 16px;
+        color: #FF4E50;
+
+    }
+}
+
+.two {
+    width: 26%;
+    padding-bottom: 20px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        li:first-child {
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 14px;
+            color: #444444;
+            line-height: 32px;
+
+        }
+
+        li {
+            font-family: "Roboto";
+            font-weight: 300;
+            font-size: 14px;
+            color: #999999;
+            line-height: 26px;
+        }
+    }
+}
+
+.three {
+    width: 25%;
+
+    .partners {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 14px;
+        color: #444444;
+        line-height: 32px;
+    }
+}
+
+.four {
+    width: 24%;
+    padding-left: 115px;
+
+    .designed {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 10px;
+        color: #CCCCCC;
+        width: 110px;
+        height: 24px;
+        padding-left: 36px;
+    }
+}
